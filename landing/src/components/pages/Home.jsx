@@ -27,7 +27,7 @@ export default function Home() {
           Launch Your  Website in 1 Days - From {" "}
           <span className="relative inline-block">
             {/* Word to highlight */}
-            <span className="relative z-10 text-gray-800">₹1999 Only</span>
+            <span className="relative z-10 text-[#7d39e8]">₹1999 Only</span>
 
             {/* Underline Animation */}
             <motion.svg

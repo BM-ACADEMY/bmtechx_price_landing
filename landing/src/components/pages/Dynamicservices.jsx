@@ -2,8 +2,8 @@ import React from "react";
 
 const plans = [
   {
-    name: "Basic",
-    price: 1999,
+    name: "Plan-A",
+    price: 5999,
     popular: false,
     bgColor: "bg-white",
     textColor: "text-gray-800/80",
@@ -12,36 +12,16 @@ const plans = [
       "Free Hosting",
       "1 Year Domain",
       "1 Year SSL",
-      "1 Business Email",
-      "5 Static Pages (5 sections max)",
-      "Single Page (10 sections)",
+      "2 Professional Email",
+      "7 Pages",
+      "Payment GateWay",
       "WhatsApp Chat",
-      "3 Months Support",
+      "1 Year Support",
     ],
   },
   {
-    name: "Standard",
-    price: 2999,
-    popular: false,
-    bgColor: "bg-white",
-    textColor: "text-gray-800/80",
-    btnStyle: "bg-indigo-500 text-white hover:bg-indigo-600",
-    features: [
-      "Free Hosting",
-      "1 Year Domain",
-      "1 Year SSL",
-      "2 Business Emails",
-      "10 Static Pages (Custom)",
-      "Basic Contact Form",
-      "WhatsApp Chat",
-      "Social Media Integration",
-      "Google Analytics",
-      "3 Months Support",
-    ],
-  },
-  {
-    name: "Advanced",
-    price: 3999,
+    name: "Plan-B",
+    price: 7999,
     popular: true,
     bgColor: "bg-white",
     textColor: "text-gray-800/80",
@@ -50,21 +30,18 @@ const plans = [
       "Free Hosting",
       "1 Year Domain",
       "1 Year SSL",
-      "3 Custom Emails",
-      "Upto 15 Custom Pages",
-      "Advanced Contact Form",
+      "2 Professional Emails",
+      "10 Pages",
+      "Social Media Signup",
+      "Payment GateWay",
       "WhatsApp Chat",
-      "Social Links Integration",
       "Google Analytics",
-      "Basic Blog Section",
-      "3 Custom Modules",
-      "Basic SEO",
-      "6 Month Support",
+      "1 Year Support",
     ],
   },
   {
-    name: "Premium ",
-    price: 6999,
+    name: "Plan-C",
+    price: 9999,
     popular: false,
     bgColor: "bg-white",
     textColor: "text-gray-800/80",
@@ -73,23 +50,65 @@ const plans = [
       "Free Hosting",
       "1 Year Domain",
       "1 Year SSL",
-      "5 Custom Emails",
-      "20 Custom Pages",
-      "Advanced Contact Form",
-      "Basic Chatbot",
+      "3 Professional Emails",
+      "15 Pages",
+      "Social Media Signup",
+      "Payment GateWay",
       "WhatsApp Chat",
-      "Social Links Integration",
       "Google Analytics",
-      "Advanced Blog",
-      "Advanced SEO",
-      "PWA Enabled",
-      "3 Custom Modules",
+      "1 Year Support",
+    ],
+  },
+  {
+    name: "Plan-D ",
+    price: 11999,
+    popular: false,
+    bgColor: "bg-white",
+    textColor: "text-gray-800/80",
+    btnStyle: "bg-indigo-500 text-white hover:bg-indigo-600",
+    features: [
+      "Free Hosting",
+      "1 Year Domain",
+      "1 Year SSL",
+      "5 Professional Emails",
+      "20 Pages + 5 Custom Pages",
+      "Social Media Signup",
+      "Payment GateWay",
+      "WhatsApp Chat",
+      "Android App (PWA)",
+      "Coupon & Discount System",
+      "Up to 3 Custom Modules",
+      "Google Analytics",
+      "1 Year Support",
+    ],
+  },
+  {
+    name: "Plan-E",
+    price: 14999,
+    popular: false,
+    bgColor: "bg-white",
+    textColor: "text-gray-800/80",
+    btnStyle: "bg-indigo-500 text-white hover:bg-indigo-600",
+    features: [
+      "Free Hosting",
+      "1 Year Domain",
+      "1 Year SSL",
+      "5 Professional Emails",
+      "20 Custom Pages",
+      "Social Media Signup",
+      "Payment GateWay",
+      "Order Tracking",
+      "WhatsApp Chat",
+      "Android App (PWA)",
+      "Coupon & Discount System",
+      "Up to 5 Custom Modules",
+      "Google Analytics",
       "1 Year Support",
     ],
   },
 ];
 
-const Services = () => {
+const Dynamicservices = () => {
   return (
     <div className="py-12 px-4">
       {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-gray-800">
@@ -134,14 +153,10 @@ const Services = () => {
             </div>
             <button
               type="button"
-              onClick={() => {
-                window.open("https://wa.me/919944288271", "_blank");
-              }}
               className={`${plan.btnStyle} text-sm w-full py-2 rounded font-medium mt-7 transition-all`}
             >
               Get Started
             </button>
-
           </div>
         ))}
       </div>
@@ -149,4 +164,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Dynamicservices;

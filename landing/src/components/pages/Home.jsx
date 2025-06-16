@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="text-sm text-gray-500">
+    <div className="text-sm text-gray-500" id="home">
       <div className="h-[580px] flex flex-col items-center justify-center px-4 text-center relative">
         {/* Tagline */}
         <div className="flex flex-wrap items-center justify-center gap-2.5 mb-6 border border-gray-500/30 rounded-full bg-gray-300/15 p-1 text-sm text-gray-800 max-w-full">
@@ -60,28 +60,36 @@ export default function Home() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
-          <button onClick={()=>{}} className="px-7 py-3 rounded bg-indigo-500 text-white font-medium">
+          <button onClick={() => {
+            window.location.href = "tel:+919944288271";
+          }} className="px-7 py-3 rounded bg-indigo-500 text-white font-medium">
             Talk to Our Team
           </button>
-          <button className="group px-7 py-2.5 flex items-center gap-2 font-medium">
-            Learn more
-            <svg
-              className="group-hover:translate-x-1 transition pt-0.5"
-              width="12"
-              height="9"
-              viewBox="0 0 12 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 4.5h10.182m-4-3.5 4 3.5-4 3.5"
-                stroke="#6B7280"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
+          <button
+  onClick={() => {
+    document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  }}
+  className="group px-7 py-2.5 flex items-center gap-2 font-medium"
+>
+  Learn more
+  <svg
+    className="group-hover:translate-x-1 transition pt-0.5"
+    width="12"
+    height="9"
+    viewBox="0 0 12 9"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1 4.5h10.182m-4-3.5 4 3.5-4 3.5"
+      stroke="#6B7280"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</button>
+
         </div>
       </div>
     </div>

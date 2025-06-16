@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '/logo.png'
 
 const Navbar = () => {
   const navLinks = [
@@ -24,15 +25,15 @@ const Navbar = () => {
     <div className="overflow-x-hidden scroll-smooth">
       <nav className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4"
+          ? "bg-indigo-500 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4"
           : "bg-indigo-500 text-white py-4 md:py-6"
       }`}>
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
           <img
-            src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoWhite.svg"
+            src={Logo}
             alt="logo"
-            className={`h-9 transition-all ${isScrolled ? "invert opacity-80" : ""}`}
+            className={`h-9 transition-all ${isScrolled ? "white" : ""}`}
           />
         </a>
 
@@ -43,7 +44,7 @@ const Navbar = () => {
               key={i}
               href={`#${link.id}`}
               className={`group flex flex-col gap-0.5 ${
-                isScrolled ? "text-gray-700" : "text-white"
+                isScrolled ? "text-white" : "text-white"
               }`}
             >
               {link.name}

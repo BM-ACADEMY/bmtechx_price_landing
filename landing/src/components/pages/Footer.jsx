@@ -1,50 +1,46 @@
 import React from 'react';
-
+import Logo1 from '/logo1.png'
 const Footer = () => {
   const linkSections = [
     {
       title: "Quick Links",
       links: [
         { label: "Home", href: "#home" },
-        { label: "Best Sellers", href: "#products" },
-        { label: "Offers & Deals", href: "#offers" },
-        { label: "Contact Us", href: "#contact" },
-        { label: "FAQs", href: "#faq" },
+        { label: "About", href: "#about" },
+        { label: "Service", href: "#Service" },
       ],
     },
     {
-      title: "Need Help?",
+      title: "Our Services?",
       links: [
-        { label: "Delivery Information", href: "#delivery" },
-        { label: "Return & Refund Policy", href: "#returns" },
-        { label: "Payment Methods", href: "#payment" },
-        { label: "Track your Order", href: "#track" },
-        { label: "Contact Us", href: "#contact" },
+        { label: "Static Website" },
+        { label: "Dynamic Website" },
+        { label: "E-Commerce" },
       ],
     },
     {
       title: "Follow Us",
       links: [
-        { label: "Instagram", href: "https://instagram.com", target: "_blank" },
-        { label: "Twitter", href: "https://twitter.com", target: "_blank" },
-        { label: "Facebook", href: "https://facebook.com", target: "_blank" },
-        { label: "YouTube", href: "https://youtube.com", target: "_blank" },
+        { label: "Instagram", href: "https://www.instagram.com/bmtechxpondy_/", target: "_blank" },
+        { label: "LinkedIn", href: "https://www.linkedin.com/in/bm-techx-pondy/?original_referer=https%3A%2F%2Fbmtechx.in%2F", target: "_blank" },
+        { label: "Facebook", href: "https://www.facebook.com/profile.php?id=61567695654956", target: "_blank" },
+        { label: "YouTube", href: "https://www.youtube.com/@BMtechx-abm", target: "_blank" },
       ],
     },
   ];
 
   return (
-    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 scroll-smooth">
+    <footer className="px-6 md:px-16 lg:px-24 xl:px-32 scroll-smooth" id='contact'>
       <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
         {/* Logo and description */}
         <div>
           <img
-            className="w-34 md:w-32"
-            src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoColored.svg"
+            className="w-14 md:w-16"
+            src={Logo1}
             alt="dummyLogoColored"
           />
           <p className="max-w-[410px] mt-6">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum unde quaerat eveniet cumque accusamus atque qui error quo enim fugiat?
+           Innovate, Accelerate, and Grow Your Revenue. Our services are tailored to ensure that businesses can effectively establish and grow their online visibility.
           </p>
         </div>
 
@@ -73,15 +69,15 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <p className="py-4 text-center text-sm md:text-base text-gray-500/80">
-  Copyright {new Date().getFullYear()} ©{" "}
+      <p className="py-4 text-center text-sm md:text-base text-gray-500/80">&copy;
+ {new Date().getFullYear()} {" "}
   <a
-    href="https://prebuiltui.com"
+    href="https://portfolio-of.bmtechx.in/"
     target="_blank"
     rel="noopener noreferrer"
     className="text-gray-700 underline hover:text-black transition"
   >
-    PrebuiltUI
+    BMTechx.in
   </a>{" "}
   All Rights Reserved.
 </p>

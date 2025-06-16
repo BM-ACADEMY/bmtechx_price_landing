@@ -41,7 +41,7 @@ export default function Home() {
               <motion.path
                 d="M5 20 C 50 35, 150 5, 195 20"
                 fill="none"
-                stroke="#1f2937"
+                stroke="#5245e5"
                 strokeWidth="3"
                 strokeLinecap="round"
                 strokeLinejoin="round"
